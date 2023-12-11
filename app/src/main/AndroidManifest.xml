@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bruca.prads">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:name=".app.AppController"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Log in Activity -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!-- Focus Chat Activity -->
+
+        <!-- Main Activity Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.MainActivity"
+            android:label = "@string/app_name" >
+        </activity>
+
+        <!-- SelfEvaluationTest Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.SelfEvaluationTestsActivity"
+            android:name="bruca.prads.activities.SelfEvaluationTests"
+            android:label = "@string/app_name" >
+        </activity>
+
+        <!-- Display study tips Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.DisplayStudyTips"
+            android:label = "@string/app_name" >
+        </activity>
+        <!-- Test score results Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.TestScoreActivity"
+            android:label = "@string/title_activity_test_score">
+        </activity>
+
+        <!-- Goals List Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.GoalsListActivity"
+            android:label = "@string/title_activity_goals_list" >
+        </activity>
+        <!-- Display Note Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.DisplayNoteActivity"
+            android:label = "@string/title_activity_display_note">
+        </activity>
+
+        <!-- Self Evaluation Tests Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.SelfEvaluationTestsActivity"
+            android:label = "@string/title_activity_self_evaluation">
+        </activity>
+
+        <!-- Single Test Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.SingleTestActivity"
+            android:label = "@string/title_activity_single_test">
+        </activity>
+
+        <!-- Mood diary Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.MoodDiaryActivity"
+			android:screenOrientation="portrait"
+            android:label = "@string/title_activity_mood_diary">
+        </activity>
+
+        <!-- New Mood Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.NewMoodActivity"
+            android:label = "@string/title_activity_new_diary_entry">
+        </activity>
+
+        <!-- Single Mood entry Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.SingleDiaryEntryActivity"
+            android:label = "@string/title_activity_diary_entry" >
+        </activity>
+
+        <!-- Positive Confessions Categories Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.ConfessionsCategoriesActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:label = "@string/title_activity_positive_confession" >
+        </activity>
+
+        <!-- Positive Confessions Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.ConfessionsCategoriesActivity"
+            android:name="bruca.prads.activities.PositiveConfessionsActivity"
+            android:label = "@string/title_activity_positive_confession" >
+        </activity>
+
+        <!-- Make Appointment Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.MakeAppointment"
+            android:parentActivityName=".activities.MainActivity"
+            android:label = "@string/title_activity_make_appointment" >
+        </activity>
+
+        <!-- Useful Resources Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.UsefulResources"
+            android:label = "@string/title_activity_useful_resources" >
+        </activity>
+
+        <!-- Useful Contacts Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.UsefulContacts"
+            android:label = "@string/title_activity_useful_contacts" >
+        </activity>
+
+        <!-- Settings Activity -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name="bruca.prads.activities.SettingsActivity"
+            android:label = "@string/title_activity_settings" >
+        </activity>
+
+        <receiver android:name=".helpers.OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".helpers.OnAlarmReceiver" />
+        <service android:name=".helpers.ReminderService" />
+    </application>
+
+</manifest>

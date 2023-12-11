@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bruca.prads.activities.SelfEvaluationTestsActivity">
+
+    <item
+        android:id="@+id/action_tests"
+        android:orderInCategory="100"
+        android:title="@string/action_take_test"
+        app:showAsAction="never" />
+
+</menu>

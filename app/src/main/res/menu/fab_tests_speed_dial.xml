@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bruca.prads.activities.SelfEvaluationTestsActivity">
+
+    <item
+        android:id="@+id/action_save_pdf"
+        android:orderInCategory="0"
+        android:icon="@drawable/ic_action_pdf"
+        android:title="Create pdf"/>
+
+</menu>

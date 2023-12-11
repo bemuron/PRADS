@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_list_row">
+
+    <TextView
+        android:id="@+id/test_report_header"
+        android:text="Depression self evaluation test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/test_official_name"
+        android:text="(MDI Inventory)"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_report_header"
+        android:textSize="@dimen/msg_text_secondary" />
+
+    <TextView
+        android:id="@+id/test_report_time"
+        android:text="Taken on 22/07/2017 at 10:17PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/test_official_name"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary" />
+
+    <TextView
+        android:id="@+id/test_report_score"
+        android:text="Test Score: "
+        android:layout_below="@+id/test_report_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary" />
+
+    <TextView
+        android:id="@+id/test_report_result"
+        android:text="20 (Mild Depression)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/test_report_score"
+        android:layout_toRightOf="@+id/test_report_score"
+        android:layout_toEndOf="@+id/test_report_score"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/test_score_description"
+        android:text="This score is indicative of...."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@id/test_report_score"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary" />
+
+    <TextView
+        android:id="@+id/test_report_note"
+        android:text="My Notes;"
+        android:layout_below="@+id/test_score_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:background="@drawable/bg_list_row"
+        android:layout_below="@+id/test_report_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <bruca.prads.models.LinedEditText
+        android:id="@+id/test_user_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list_row"
+        android:capitalize="sentences"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:hint="User Notes"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/margin_padding_normal"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/test_report_save"
+        android:padding="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_below="@+id/textContainer"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+
+</RelativeLayout>
+</ScrollView>

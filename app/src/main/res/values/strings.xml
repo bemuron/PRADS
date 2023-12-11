@@ -1,0 +1,461 @@
+<resources>
+    <string name="app_name">Focus</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_search">Search</string>
+    <string name="next">Continue</string>
+    <string name="action_take_test">Take test</string>
+    <string name="action_about_positive_confessions">About positive confessions</string>
+    <string name="short_desc">The student health and well-being app</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="register">Register on</string>
+    <string name="appointment_request">Appointment request form</string>
+    <string name="appointment_desc">Please fill in the form below and tell us what the appointment is about
+    so we can prepare accordingly. A member from the team will contact you immediately with more
+    information.</string>
+    <string name="about_focus">Previous research has revealed that some students will not notice when
+    they are tending towards a mental illness until its too late. The goal therefore of this app is to help
+    students be able to notice the signs and symptoms of these mental illnesses and therefore prevent them. This
+    app does NOT aim at replacing the services you receive from your doctor. Please seek help from your doctor as usual
+    and use the Focus app as a compliment.</string>
+    <string name="about_app">
+        This app aims at helping students prevent mental illnesses (depression,anxiety,stress).
+    </string>
+    <string name="about_confessions">
+        About Positive Confessions
+    </string>
+    <string name="about_positive_confessions">
+        The words we speak carry enormous power to either make or break, build or destroy. The Bible in Proverbs 18:21
+        says that death and life are in the power of the tongue, notice how the power is accredited to the tongue. It is
+        therefore important that we speak the right things. The purpose of this section is to guide you on the kinds of
+        things to say over yourself and your loved ones. All the confessions are taken from Bible verses and the verses
+        are provided for personal reference and further study.
+    </string>
+
+    <!-- activity title names -->
+    <string name="title_activity_make_appointment">Make appointment</string>
+    <string name="title_activity_positive_confession">Positive Confessions</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_useful_resources">Useful Resources</string>
+    <string name="title_activity_useful_contacts">Useful Contacts</string>
+    <string name="title_activity_diary_entry">Diary entry</string>
+    <string name="title_activity_new_diary_entry">New entry</string>
+    <string name="title_activity_self_evaluation">Self evaluation</string>
+    <string name="title_activity_display_note">Goal/objective</string>
+    <string name="title_activity_goals_list">Goals/objectives</string>
+    <string name="title_activity_mood_diary">Mood diary</string>
+    <string name="title_activity_test_score">Test score</string>
+    <string name="title_activity_single_test">Test result</string>
+
+    <string name="uni_health_center_address">Riccarton General Practice
+        "\n" The Avenue
+        "\n" Edinburgh Campus
+        "\n" EH14 4AS</string>
+
+    <!-- end activity title names -->
+
+    <!-- Login and registration -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not signed up? Create account.</string>
+    <string name="btn_link_to_login">Already registred! Login.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <!-- end Login and registration -->
+
+    <string name="useful_resources">The links below provide rich information on
+    prevention of mental illnesses. Visit the sites to read more about these mental illnesses and get in a better
+    position to prevent them.</string>
+    <string name="uni_health_center">Heriot Watt university health center.</string>
+
+    <!--Settings Activity -->
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="mood_entry_reminder">Set mood entry reminder time</string>
+    <string name="default_mood_entry_time">16:00</string>
+
+    <string name="default_gallery_storage">My Videos</string>
+    <string name="title_auto_upload">Auto upload</string>
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">We are a team of like-minded people, specialized in development of
+        Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+    <string name="app_version">3.5</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="url_faq">http://www.androidhive.info/privacy-policy/</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="url_privacy">http://www.androidhive.info/privacy-policy/</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">http://www.androidhive.info/terms-of-service/</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_mood_time">key_mood_time</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+
+    <!-- end Settings Activity -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="action_settings_headers">Settings with Headers</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Notification Bar -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Notification Bar -->
+    <string name="notify_new_task_message">A task needs to be reviewed!</string>
+    <string name="notify_new_task_title">Task Reminder!</string>
+
+    <!-- Self Assessment Strings -->
+
+    <string name="no_depression_desc">This score reveals that you are not suffering from depression in a way
+    that is harmful to your health, keep it this way but don\'t hesitate to see your doctor if you feel you need
+        assistance</string>
+
+    <string name="mild_depression_desc">Some of the symptoms of this kind of depression include irritability/anger,
+    hopelessness, feelings of guilt or despair and lack of motivation among others. If you have noticed any of
+        these over the past days/weeks, we advise that you seek advise from your doctor on how to go about it. </string>
+
+    <string name="moderate_depression_desc">Moderate depression shares similar symptoms with mild depression including
+    problems with self esteem, reduced productivity, feelings of worthlessness, increased sensivities and excessive worrying.
+    If you have been feeling this way over the past weeks and it has been hindering your normal work/activities, please seek
+    help from you doctor.</string>
+
+    <string name="severe_depression_desc">Severe depression is classified as having the
+        symptoms of mild to moderate depression, but the symptoms are severe and noticeable,
+        even to your loved ones. This may also cause delusions, feelings of stupor, hallucinations and suicidal thoughts.
+        This requires medical treatment and we advise that you see your doctor as soon as possible.</string>
+
+    <string name="no_anxiety_desc">This score reveals that you are fine and not suffering from any kind of
+        anxiety. Please monitor your progress after your next test to ensure all is well but if you feel something
+    is still not right, do not hesitate to seek help.</string>
+
+    <string name="mild_anxiety_desc">With mild anxiety, the symptoms may not drastically hinder your life and stop you from
+    functioning normally but you will still have constant worries, feelings of nervousness, nauseated or shaky. It is still
+    advisable to seek help inorder to get more assistance.</string>
+
+    <string name="moderate_anxiety_desc">This score indicates that you are having issues with anxiety in a way that it
+    is starting to affect your normal life. The best solution for this is to seek professional help before the situation
+        worsens.</string>
+
+    <string name="severe_anxiety_desc">Severe anxiety may cause panic attacks and make one feel as though they are having
+    a heart a ttack and going to die. It totally hinders your life and you cannot function normally. Please seek
+    help immediately.</string>
+
+    <string name="worst_gen_wellbeing_desc"> This score indicates that you are living the worst possible quality of life
+        according to the scale. You are probably anxious, depressed and stressed and NOW would be the best time to
+    seek help. Please consider the recommendations provided.</string>
+
+    <string name="poor_gen_wellbeing_desc"> This score indicates that you are living a poor quality of life. Reflect on
+    the activities you have been doing and even better speak to a professional for more help on how to improve the quality
+    of your life.</string>
+
+    <string name="low_gen_wellbeing_desc"> This score indicates that you are living a low quality of life.
+        It does not necessarily indicate any kind of mental health issue but you are just not generally okay with things.
+    </string>
+
+
+    <string name="okay_gen_wellbeing_desc"> This score indicates that your quality of life is just okay. This score is
+    around the average point and shows that you may not be very happy but are not very sad too. The good news is that it
+    can be improved.</string>
+
+    <string name="good_gen_wellbeing_desc"> This score indicates that you are living a good quality of life.
+        You are happy and satisfied with the way things have been going on for you. Keep it up.</string>
+
+    <string name="best_gen_wellbeing_desc"> This score indicates that you are living the best possible quality of life.
+        You are in good spirits, full of vigour and are calm. In order to keep this score why don\'t you go ahead
+    and read speak out some positive confessions about you.</string>
+
+    <string name="no_stress_desc"> This score indicates that you are not suffering from any kind of stress. This is
+    good and even to keep it this way, please consider the recommendations provided.</string>
+
+    <string name="mild_stress_desc">Stress is how your body responds to certain situations and at times can help
+    you do work to meet a deadline or stay clear-minded in chaotic situations but this is meant to be
+    temporary. If the stress symptoms are persistent, it is advisable that you seek help.</string>
+
+    <string name="stress_desc"> This score indicates that you are experiencing stress which is also
+    predictive of psychological distress. Seek a professional for further help to prevent the situation from
+    worsening.</string>
+
+    <!-- score names -->
+    <string name="no_depression">No depression</string>
+    <string name="mild_depression">Mild depression</string>
+    <string name="moderate_depression">Moderate depression</string>
+    <string name="severe_depression">Severe depression</string>
+    <string name="no_anxiety">No anxiety</string>
+    <string name="mild_anxiety">Mild anxiety</string>
+    <string name="moderate_anxiety">Moderate anxiety</string>
+    <string name="severe_anxiety">Severe anxiety</string>
+    <string name="no_stress">No stress</string>
+    <string name="mild_stress">Mild stress</string>
+    <string name="stress">Stress</string>
+    <string name="worst_quality">Worst quality</string>
+    <string name="poor_quality">Poor quality</string>
+    <string name="low_quality">Low quality</string>
+    <string name="okay_quality">Okay quality</string>
+    <string name="good_quality">Good quality</string>
+    <string name="best_quality">Best quality</string>
+
+    <!-- recommendations -->
+    <string name="usefulResources">Useful resources</string>
+    <string name="useful_contacts">Useful contacts</string>
+    <string name="make_appointment">Make appointment</string>
+    <string name="positive_confessions">Positive confessions</string>
+
+    <!-- WHO-5 -->
+    <string name="WHO5">WHO-Five</string>
+    <string name="who5_instructions">Please indicate for the statement below which is closest to
+        how you have been feeling over the last two weeks.</string>
+    <string-array name="who_5">
+        <item>I have felt cheerful and in good spirits</item>
+        <item>I have felt calm and relaxed</item>
+        <item>I have felt active and vigorous</item>
+        <item>I woke up feeling fresh and rested</item>
+        <item>My daily life has been filled with things that interest me</item>
+    </string-array>
+    <!-- end of WHO-5-->
+
+    <!-- MDI -->
+    <string name="MDI">Major Depression Inventory</string>
+    <string name="mdi_instructions">Over the last two weeks, how much of the time;</string>
+    <string-array name="mdi">
+        <item>Have you felt low in spirits or sad?</item>
+        <item>Have you lost interest in your daily activities?</item>
+        <item>Have you felt lacking in energy and strength?</item>
+        <item>Have you felt less self-confident?</item>
+        <item>Have you had a bad conscience or feelings of guilt?</item>
+        <item>Have you felt that life wasn’t worth living?</item>
+        <item>Have you had difficulty in concentrating, e.g. when reading the
+        newspaper or watching television?</item>
+        <item>Have you felt very restless?</item>
+        <item>Have you felt subdued or slowed down?</item>
+        <item>Have you had trouble sleeping at night?</item>
+        <item>Have you suffered from reduced appetite?</item>
+        <item>Have you suffered from increased appetite?</item>
+    </string-array>
+    <!-- end of MDI -->
+
+    <!-- WHO-5/MDI Responses -->
+    <string-array name="who_mdi_responses">
+        <item>At no time</item>
+        <item>Some of the time</item>
+        <item>Slightly less than half the time</item>
+        <item>Slightly more than half the time</item>
+        <item>Most of the time</item>
+        <item>All of the time</item>
+    </string-array>
+    <!-- end of WHO-5/MDI Responses -->
+
+    <!-- GAD7 -->
+    <string name="GAD7">GAD7</string>
+    <string name="gad7_instructions">Over the last 2 weeks, how often have you been
+            bothered by the following problem?</string>
+    <string-array name="gad7">
+        <item>Feeling nervous, anxious, or on edge</item>
+        <item>Not being able to stop or control worrying</item>
+        <item>Worrying too much about different things </item>
+        <item>Trouble relaxing</item>
+        <item>Being so restless that it is hard to sit still</item>
+        <item>Becoming easily annoyed or irritable</item>
+        <item>Feeling afraid as if something awful might happen</item>
+    </string-array>
+    <!-- end of GAD7-->
+
+    <!-- GAD7 Responses -->
+    <string-array name="gad7_responses">
+        <item>Not at all sure</item>
+        <item>Several days</item>
+        <item>Over half the days</item>
+        <item>Nearly everyday</item>
+    </string-array>
+    <!-- end of GAD7 Responses -->
+
+    <!-- USS -->
+    <string name="uss_scale">University Stress Scale</string>
+    <string name="uss_instructions">How often has the following caused you stress over the
+        past month?</string>
+    <string-array name="uss">
+    <item>Academic/coursework demands</item>
+    <item>Procrastination</item>
+    <item>University/college environment</item>
+    <item>Finances and money problems</item>
+    <item>Housing/accommodation</item>
+    <item>Transport</item>
+    <item>Mental health problems</item>
+    <item>Physical health problems</item>
+    <item>Parenting issues</item>
+    <item>Childcare</item>
+    <item>Family relationships</item>
+    <item>Friendships</item>
+    <item>Romantic relationships</item>
+    <item>Relationship break-down</item>
+    <item>Work</item>
+    <item>Parental expectations</item>
+    <item>Study/life balance</item>
+    <item>Discrimination</item>
+    <item>Sexual orientation issues</item>
+    <item>Language/cultural issues</item>
+    <item>Other demands</item>
+    </string-array>
+    <!-- end of USS-->
+
+    <!-- USS Responses -->
+    <string-array name="uss_responses">
+    <item>Not at all</item>
+    <item>Sometimes</item>
+    <item>Frequently</item>
+    <item>Constantly</item>
+    </string-array>
+    <!-- end of USS Responses -->
+
+    <!-- End of Self Assessment Strings -->
+
+    <!-- Launcher Icons -->
+    <string-array name="icons">
+        <item>@drawable/depression</item>
+        <item>@drawable/anxiety</item>
+        <item>@drawable/stress</item>
+    </string-array>
+
+    <!-- My Mental Health Categories -->
+    <string-array name="moduleName">
+        <item>Self Evaluation</item>
+        <item>Mood Diary</item>
+        <item>Make Appointment</item>
+        <item>Prevention Tips</item>
+        <item>Useful Resources</item>
+    </string-array>
+
+    <!-- My Studies Categories -->
+    <string-array name="mStudiesCategories">
+        <item>My Goals and Objectives</item>
+        <item>Study Smarter not Harder</item>
+        <item>Secrets of Straight A Students</item>
+        <item>Positive Confession</item>
+
+    </string-array>
+
+    <!-- Self Evaluation Tests Categories -->
+    <string-array name="SelfEvaluationTests">
+        <item>General Wellbeing</item>
+        <item>Depression</item>
+        <item>Anxiety</item>
+        <item>Stress</item>
+        <item>All</item>
+    </string-array>
+
+    <!-- Appointment days -->
+    <string name="day">Day</string>
+    <string-array name="days">
+        <item>Select</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <!-- Appointment times -->
+    <string name="time">Time</string>
+    <string-array name="time">
+        <item>Select</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+    </string-array>
+
+</resources>

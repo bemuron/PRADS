@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_list_row">
+
+    <TextView
+        android:id="@+id/date_mood_taken"
+        android:text="Jun 17 2017"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/margin_padding_tiny"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/from"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time_mood_taken"
+        android:text="7:14 PM"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_mood_taken"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_secondary" />
+
+
+    <ImageView
+        android:id="@+id/mood_taken_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_mood_taken"
+        android:padding="@dimen/margin_padding_small"
+        android:src="@drawable/verygood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/mood_taken"
+        android:text="Very Good"
+        android:padding="@dimen/margin_padding_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/mood_taken_icon"
+        android:layout_toEndOf="@+id/mood_taken_icon"
+        android:layout_alignBottom="@+id/mood_taken_icon"
+        android:textColor="@color/from"
+        android:textSize="@dimen/text_size_xxnormal" />
+
+    <TextView
+        android:id="@+id/mood_notes_label"
+        android:text="My Notes;"
+        android:layout_below="@+id/mood_taken_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_small"
+        android:textColor="@color/from"
+        android:textSize="@dimen/msg_text_primary"
+        android:textStyle="bold" />
+
+        <bruca.prads.models.LinedEditText
+        android:id="@+id/mood_taken_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+            android:layout_below="@+id/mood_notes_label"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/margin_padding_normal"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+    <Button
+        android:id="@+id/mood_update"
+        android:padding="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_below="@+id/mood_taken_notes"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</RelativeLayout>
+    </ScrollView>

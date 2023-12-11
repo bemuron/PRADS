@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<RelativeLayout
+    android:padding="@dimen/margin_padding_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_large"
+        android:id="@+id/useful_resources_intro"
+        android:textStyle="bold"
+        android:padding="@dimen/margin_padding_normal"
+        android:text="@string/useful_resources"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/useful_resources_intro"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:padding="@dimen/margin_padding_normal"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/depression_resources"
+        android:textStyle="bold"
+        android:text="Depression"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/depression_resources"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/globe"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/globe"
+        android:layout_toEndOf="@+id/globe"
+        android:layout_alignBottom="@+id/globe"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/depression_link_1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/globe"
+        android:layout_alignLeft="@+id/globe"
+        android:layout_alignStart="@+id/globe"
+        android:textStyle="bold"
+        android:id="@+id/link_url"
+        android:text="Healthline"/>
+
+    <!-- 2nd depression link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link_url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/globe2"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/globe2"
+        android:layout_toEndOf="@+id/globe2"
+        android:layout_alignBottom="@+id/globe2"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/depression_link_2"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/globe2"
+        android:layout_alignLeft="@+id/globe2"
+        android:layout_alignStart="@+id/globe2"
+        android:textStyle="bold"
+        android:id="@+id/link_url_2"
+        android:text="Mayo Clinic"/>
+
+    <!-- 3rd depression link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link_url_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/globe3"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/globe3"
+        android:layout_toEndOf="@+id/globe3"
+        android:layout_alignBottom="@+id/globe3"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/depression_link_3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/globe3"
+        android:layout_alignLeft="@+id/globe3"
+        android:layout_alignStart="@+id/globe3"
+        android:textStyle="bold"
+        android:id="@+id/link_url_3"
+        android:text="Oxford Medicine"/>
+
+    <!-- 4th depression link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link_url_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/globe4"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/globe4"
+        android:layout_toEndOf="@+id/globe4"
+        android:layout_alignBottom="@+id/globe4"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/depression_link_4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/globe4"
+        android:layout_alignLeft="@+id/globe4"
+        android:layout_alignStart="@+id/globe4"
+        android:textStyle="bold"
+        android:id="@+id/link_url_4"
+        android:text="NHS"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/depression_line"
+        android:layout_below="@+id/link_url_4"
+        android:background="@color/colorAccent"/>
+
+    <!-- anxiety resources start -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/depression_line"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:padding="@dimen/margin_padding_normal"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/anxiety_resources"
+        android:textStyle="bold"
+        android:text="Anxiety"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anxiety_resources"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/a_globe1"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/a_globe1"
+        android:layout_toEndOf="@+id/a_globe1"
+        android:layout_alignBottom="@+id/a_globe1"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/anxiety_link_1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/a_globe1"
+        android:layout_alignLeft="@+id/a_globe1"
+        android:layout_alignStart="@+id/a_globe1"
+        android:textStyle="bold"
+        android:id="@+id/a_link_url"
+        android:text="Healthline"/>
+
+    <!-- 2nd anxiety link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_link_url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/a_globe2"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/a_globe2"
+        android:layout_toEndOf="@+id/a_globe2"
+        android:layout_alignBottom="@+id/a_globe2"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/anxiety_link_2"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/a_globe2"
+        android:layout_alignLeft="@+id/a_globe2"
+        android:layout_alignStart="@+id/a_globe2"
+        android:textStyle="bold"
+        android:id="@+id/a_link_url_2"
+        android:text="Moodjuice"/>
+
+    <!-- 3rd anxiety link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_link_url_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/a_globe3"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/a_globe3"
+        android:layout_toEndOf="@+id/a_globe3"
+        android:layout_alignBottom="@+id/a_globe3"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/anxiety_link_3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/a_globe3"
+        android:layout_alignLeft="@+id/a_globe3"
+        android:layout_alignStart="@+id/a_globe3"
+        android:textStyle="bold"
+        android:id="@+id/a_link_url_3"
+        android:text="Mayo Clinic"/>
+
+    <!-- 4th anxiety link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_link_url_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/a_globe4"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/a_globe4"
+        android:layout_toEndOf="@+id/a_globe4"
+        android:layout_alignBottom="@+id/a_globe4"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/anxiety_link_4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/a_globe4"
+        android:layout_alignLeft="@+id/a_globe4"
+        android:layout_alignStart="@+id/a_globe4"
+        android:textStyle="bold"
+        android:id="@+id/a_link_url_4"
+        android:text="Calm Clinic"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/anxiety_line"
+        android:layout_below="@+id/a_link_url_4"
+        android:background="@color/colorAccent"/>
+
+    <!-- stress resources start -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anxiety_line"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:padding="@dimen/margin_padding_normal"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/stress_resources"
+        android:textStyle="bold"
+        android:text="Stress"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stress_resources"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/s_globe1"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/s_globe1"
+        android:layout_toEndOf="@+id/s_globe1"
+        android:layout_alignBottom="@+id/s_globe1"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/stress_link_1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/s_globe1"
+        android:layout_alignLeft="@+id/s_globe1"
+        android:layout_alignStart="@+id/s_globe1"
+        android:textStyle="bold"
+        android:id="@+id/s_link_url"
+        android:text="NHS"/>
+
+    <!-- 2nd stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_link_url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/s_globe2"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/s_globe2"
+        android:layout_toEndOf="@+id/s_globe2"
+        android:layout_alignBottom="@+id/s_globe2"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/stress_link_2"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/s_globe2"
+        android:layout_alignLeft="@+id/s_globe2"
+        android:layout_alignStart="@+id/s_globe2"
+        android:textStyle="bold"
+        android:id="@+id/s_link_url_2"
+        android:text="Healthline"/>
+
+    <!-- 3rd stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_link_url_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/s_globe3"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/s_globe3"
+        android:layout_toEndOf="@+id/s_globe3"
+        android:layout_alignBottom="@+id/s_globe3"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/stress_link_3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/s_globe3"
+        android:layout_alignLeft="@+id/s_globe3"
+        android:layout_alignStart="@+id/s_globe3"
+        android:textStyle="bold"
+        android:id="@+id/s_link_url_3"
+        android:text="Help Guide"/>
+
+    <!-- 4th stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_link_url_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/s_globe4"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/s_globe4"
+        android:layout_toEndOf="@+id/s_globe4"
+        android:layout_alignBottom="@+id/s_globe4"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/stress_link_4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/s_globe4"
+        android:layout_alignLeft="@+id/s_globe4"
+        android:layout_alignStart="@+id/s_globe4"
+        android:textStyle="bold"
+        android:id="@+id/s_link_url_4"
+        android:text="Skills You Need"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/stress_line"
+        android:layout_below="@+id/s_link_url_4"
+        android:background="@color/colorAccent"/>
+
+    <!-- wellbeing resources start -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stress_line"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:padding="@dimen/margin_padding_normal"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/wellbeing_resources"
+        android:textStyle="bold"
+        android:text="Mental Wellbeing"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wellbeing_resources"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/w_globe1"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/w_globe1"
+        android:layout_toEndOf="@+id/w_globe1"
+        android:layout_alignBottom="@+id/w_globe1"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/wellbeing_link_1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/w_globe1"
+        android:layout_alignLeft="@+id/w_globe1"
+        android:layout_alignStart="@+id/w_globe1"
+        android:textStyle="bold"
+        android:id="@+id/w_link_url"
+        android:text="NHS"/>
+
+    <!-- 2nd stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_link_url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/w_globe2"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/w_globe2"
+        android:layout_toEndOf="@+id/w_globe2"
+        android:layout_alignBottom="@+id/w_globe2"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/wellbeing_link_2"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/w_globe2"
+        android:layout_alignLeft="@+id/w_globe2"
+        android:layout_alignStart="@+id/w_globe2"
+        android:textStyle="bold"
+        android:id="@+id/w_link_url_2"
+        android:text="Mind"/>
+
+    <!-- 3rd stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_link_url_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/w_globe3"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/w_globe3"
+        android:layout_toEndOf="@+id/w_globe3"
+        android:layout_alignBottom="@+id/w_globe3"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/wellbeing_link_3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/w_globe3"
+        android:layout_alignLeft="@+id/w_globe3"
+        android:layout_alignStart="@+id/w_globe3"
+        android:textStyle="bold"
+        android:id="@+id/w_link_url_3"
+        android:text="WellScotland"/>
+
+    <!-- 4th stress link -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_link_url_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:id="@+id/w_globe4"
+        android:src="@drawable/globe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/w_globe4"
+        android:layout_toEndOf="@+id/w_globe4"
+        android:layout_alignBottom="@+id/w_globe4"
+        android:textSize="@dimen/text_size_normal"
+        android:paddingTop="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:paddingEnd="@dimen/margin_padding_small"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:text="Link to site"
+        android:id="@+id/wellbeing_link_4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/w_globe4"
+        android:layout_alignLeft="@+id/w_globe4"
+        android:layout_alignStart="@+id/w_globe4"
+        android:textStyle="bold"
+        android:id="@+id/w_link_url_4"
+        android:text="NHS"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/w_link_url_4"
+        android:background="@color/colorAccent"/>
+
+
+</RelativeLayout>
+
+    </ScrollView>

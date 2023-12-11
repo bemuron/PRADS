@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/cal_container"
+        android:layout_weight="0.4"/>
+
+    <RelativeLayout
+        android:id="@+id/good_moods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_normal"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_okay"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingRight="@dimen/margin_padding_xnormal"
+            android:src="@drawable/okay"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_okay"
+            android:layout_alignLeft="@+id/icon_okay"
+            android:layout_alignStart="@+id/icon_okay"
+            android:layout_alignRight="@+id/icon_okay"
+            android:layout_alignEnd="@+id/icon_okay"
+            android:layout_below="@+id/icon_okay"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:text="Okay"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/icon_good"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingRight="@dimen/margin_padding_xnormal"
+            android:layout_toRightOf="@+id/icon_okay"
+            android:layout_toEndOf="@+id/icon_okay"
+            android:layout_height="wrap_content"
+            android:src="@drawable/good"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_good"
+            android:layout_alignLeft="@+id/icon_good"
+            android:layout_alignStart="@+id/icon_good"
+            android:layout_alignRight="@+id/icon_good"
+            android:layout_alignEnd="@+id/icon_good"
+            android:layout_below="@+id/icon_good"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:gravity="center_horizontal"
+            android:text="Good"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingRight="@dimen/margin_padding_xnormal"
+            android:id="@+id/icon_verygood"
+            android:layout_toRightOf="@+id/icon_good"
+            android:layout_toEndOf="@+id/icon_good"
+            android:layout_height="wrap_content"
+            android:src="@drawable/verygood"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_verygood"
+            android:layout_alignLeft="@+id/icon_verygood"
+            android:layout_alignStart="@+id/icon_verygood"
+            android:layout_alignRight="@+id/icon_verygood"
+            android:layout_alignEnd="@+id/icon_verygood"
+            android:layout_below="@+id/icon_verygood"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:gravity="center_horizontal"
+            android:text="Very good"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bad_moods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_depressed"
+            android:src="@drawable/depressed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_depressed"
+            android:layout_alignLeft="@+id/icon_depressed"
+            android:layout_alignStart="@+id/icon_depressed"
+            android:layout_alignRight="@+id/icon_depressed"
+            android:layout_alignEnd="@+id/icon_depressed"
+            android:layout_below="@+id/icon_depressed"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:text="Depressed"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingRight="@dimen/margin_padding_xnormal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_depressed"
+            android:layout_toEndOf="@+id/icon_depressed"
+            android:id="@+id/icon_anxious"
+            android:src="@drawable/anxious"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_anxious"
+            android:layout_alignLeft="@+id/icon_anxious"
+            android:layout_alignStart="@+id/icon_anxious"
+            android:layout_alignRight="@+id/icon_anxious"
+            android:layout_alignEnd="@+id/icon_anxious"
+            android:layout_below="@+id/icon_anxious"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:gravity="center_horizontal"
+            android:text="Anxious"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingRight="@dimen/margin_padding_xnormal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_anxious"
+            android:layout_toEndOf="@+id/icon_anxious"
+            android:id="@+id/icon_stressed"
+            android:src="@drawable/stressed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_stressed"
+            android:layout_alignLeft="@+id/icon_stressed"
+            android:layout_alignStart="@+id/icon_stressed"
+            android:layout_alignRight="@+id/icon_stressed"
+            android:layout_alignEnd="@+id/icon_stressed"
+            android:layout_below="@+id/icon_stressed"
+            android:textSize="@dimen/text_size_normal"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:gravity="center_horizontal"
+            android:text="Stressed"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
